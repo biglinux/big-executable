@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+package_name=big-executable
+case "$1" in
+  install)
+    update-mime-database /usr/share/mime/
+    ;;
+  upgrade)
+    update-mime-database /usr/share/mime/
+;;
+esac
+exit 0
