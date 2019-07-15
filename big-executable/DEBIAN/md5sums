@@ -1,0 +1,4 @@
+0253756001fb7ba130b13b576a062c86  DEBIAN/control
+d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
+b04d82f10995bb69f20a6ee91c46b6ba  usr/share/applications/big-executable.desktop
+4466cc249bc4aa7dc9e76b2e4174a9dd  usr/bin/big-execute

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Run this file
+Name[pt]=Executar esse arquivo
+Keywords=runtime
+Exec=/usr/bin/big-execute %f
+Terminal=false
+Type=Application
+Icon=install
+MimeType=application/x-shellscript;application/x-executable;

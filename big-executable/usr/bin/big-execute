@@ -1,0 +1,23 @@
+#!/bin/bash
+
+yad --form --text "\nAtenção, executar esse tipo de arquivo pode danificar o sistema.\n\nProssiga somente se confiar que não se trata de um arquivo malicioso.\n \n \n \n" \
+--button=gtk-cancel:0 \
+--button="Executar no terminal":1 \
+--button="Executar":2 \
+--center --on-top --borders=20 --title="Executar arquivo"
+
+        yadresult=$?
+        if [ "$yadresult" = "0" ]; then
+            exit
+        fi
+
+        if [ "$yadresult" = "1" ]; then
+            chmod +x "$*"
+            konsole -e "$*"
+        fi
+
+    
+        if [ "$yadresult" = "2" ]; then
+            chmod +x "$*"
+            "$*"
+        fi
