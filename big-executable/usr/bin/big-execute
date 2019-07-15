@@ -5,8 +5,9 @@ yad --form --text "\nAtenção, executar esse tipo de arquivo pode danificar o s
 --button=" Executar no terminal!/usr/share/icons/gnome/16x16/apps/utilities-terminal.png":1 \
 --button="Executar!/usr/share/icons/hicolor/16x16/apps/running.png":2 \
 --center --on-top --borders=20 --title="Executar arquivo"
-set -H
+
         yadresult=$?
+        set -H
         if [ "$yadresult" = "0" ]; then
             exit
         fi
