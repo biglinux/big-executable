@@ -1,6 +1,6 @@
 d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
-082189e6501130e6ea0946a6f9208feb  DEBIAN/control
-b04d82f10995bb69f20a6ee91c46b6ba  usr/share/applications/big-executable.desktop
+6a8f7a735ddd9b29c2ff069e29582570  DEBIAN/control
+fcb07b1d1a35b17c6989f79ebae981cd  usr/share/applications/big-executable.desktop
 addf526bee1f6b2bf987e3c4cd1541a3  usr/share/mime/packages/big-execute.xml
 43298faf9acc222389c423cb4ce5ea61  usr/bin/big-execute
 b6d6fb51a4ab2ce48517289804032388  usr/local/bin/kde-open5

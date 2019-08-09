@@ -6,4 +6,5 @@ Exec=/usr/bin/big-execute %f
 Terminal=false
 Type=Application
 Icon=install
+NoDisplay=True
 MimeType=application/x-shellscript;application/x-executable;
