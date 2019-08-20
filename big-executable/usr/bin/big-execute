@@ -9,7 +9,8 @@ yad --form --text $"\nAtenção, executar esse tipo de arquivo pode danificar o 
 --button=gtk-cancel:0 \
 --button=$" Executar no terminal!/usr/share/icons/gnome/16x16/apps/utilities-terminal.png":1 \
 --button=$"Executar!/usr/share/icons/hicolor/16x16/apps/running.png":2 \
---center --on-top --borders=20 --title=$"Executar arquivo"
+--center --on-top --borders=20 --title=$"Executar arquivo" \
+--window-icon="emblem-warning"
 
         yadresult=$?
         set -H
