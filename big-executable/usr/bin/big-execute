@@ -1,8 +1,14 @@
 #!/bin/bash
 
+
+if [ "$(echo "$*" | grep -i /usr/bin/open-mtp-dolphin)" != "" ]; then
+    /usr/bin/open-mtp-dolphin
+    exit
+fi 
+
+
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=big-executable
-
 
 set +H
 yad --form --text $"\nAtenção, executar esse tipo de arquivo pode danificar o sistema.\n\nProssiga somente se confiar que não se trata de um arquivo malicioso.\n \n \n \n" \
