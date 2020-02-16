@@ -6,6 +6,10 @@ if [ "$(echo "$*" | grep -i /usr/bin/open-mtp-dolphin)" != "" ]; then
     exit
 fi 
 
+if [ "$(echo "$*" | grep -i open-sambasearch-dolphin)" != "" ]; then
+    open-sambasearch-dolphin
+    exit
+fi 
 
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=big-executable
