@@ -4,8 +4,8 @@ fc444a321843d6cad388df0f3728bce6  DEBIAN/big-executable.pot
 4edec0c5a7f36ef8cb6def0193915f0f  DEBIAN/languages
 d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
 9192b18e9a21982e6820d35de40821a7  DEBIAN/pt.po
-056027ddfd405be7a44fd043d6f1df0f  DEBIAN/control
-bd4d931b9254ab57d395c7111f541336  usr/bin/big-execute
+bf0a1a43dd2d19c5e0f8294eda3f44f8  DEBIAN/control
+07f26c7e248e97f33972c8c691d1acfb  usr/bin/big-execute
 b6d6fb51a4ab2ce48517289804032388  usr/local/bin/kde-open5
 fcb07b1d1a35b17c6989f79ebae981cd  usr/share/applications/big-executable.desktop
 33d068513cc7ba1049b989d18d4085ea  usr/share/locale/en/LC_MESSAGES/big-executable.mo

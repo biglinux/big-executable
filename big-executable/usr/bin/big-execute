@@ -15,26 +15,38 @@ export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=big-executable
 
 set +H
-yad --form --text $"\nAtenção, executar esse tipo de arquivo pode danificar o sistema.\n\nProssiga somente se confiar que não se trata de um arquivo malicioso.\n \n \n \n" \
+use_root=$(yad --form --text $"\nAtenção, executar esse tipo de arquivo pode danificar o sistema.\n\nProssiga somente se confiar que não se trata de um arquivo malicioso.\n \n \n" \
+--field $"Utilizar permissões administrativas (root)":CHK \
 --button=gtk-cancel:0 \
---button=$" Executar no terminal!/usr/share/icons/gnome/16x16/apps/utilities-terminal.png":1 \
 --button=$"Executar!/usr/share/icons/hicolor/16x16/apps/running.png":2 \
+--button=$" Executar no terminal!/usr/share/icons/gnome/16x16/apps/utilities-terminal.png":4 \
 --center --on-top --borders=20 --title=$"Executar arquivo" \
---window-icon="emblem-warning"
+--window-icon="emblem-warning")
 
         yadresult=$?
+
         set -H
+
         if [ "$yadresult" = "0" ]; then
             exit
         fi
-
-        if [ "$yadresult" = "1" ]; then
+        
+        
+        if [ "$yadresult" = "2" ]; then
             chmod +x "$*"
-            konsole -e "$*"
+            if [ "$use_root" = "TRUE|" ]; then
+                pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true "$*"
+            else
+                "$*"
+            fi
         fi
 
     
-        if [ "$yadresult" = "2" ]; then
+        if [ "$yadresult" = "4" ]; then
             chmod +x "$*"
-            "$*"
+            if [ "$use_root" = "TRUE|" ]; then
+                pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true konsole -e "$*"
+            else
+                konsole -e "$*"
+            fi
         fi
