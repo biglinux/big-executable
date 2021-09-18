@@ -1,27 +1,18 @@
 #!/bin/bash
 
-
-if [ "$(echo "$*" | grep -i /usr/bin/open-mtp-dolphin)" != "" ]; then
-    /usr/bin/open-mtp-dolphin
-    exit
-fi 
-
-if [ "$(echo "$*" | grep -i open-sambasearch-dolphin)" != "" ]; then
-    open-sambasearch-dolphin
-    exit
-fi 
-
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=big-executable
 
 set +H
 use_root=$(yad --form --text $"\nAtenção, executar esse tipo de arquivo pode danificar o sistema.\n\nProssiga somente se confiar que não se trata de um arquivo malicioso.\n \n \n" \
 --field $"Utilizar permissões administrativas (root)":CHK \
---button=gtk-cancel:0 \
+--field $"Manter o terminal aberto":CHK \
+--button=$"Fechar!gtk-close":0 \
 --button=$"Executar!/usr/share/icons/hicolor/16x16/apps/running.png":2 \
---button=$" Executar no terminal!/usr/share/icons/gnome/16x16/apps/utilities-terminal.png":4 \
+--button=$"Executar no terminal!/usr/share/icons/gnome/16x16/apps/utilities-terminal.png":4 \
 --center --on-top --borders=20 --title=$"Executar arquivo" \
---window-icon="emblem-warning")
+--window-icon="emblem-warning" \
+--margins=30)
 
         yadresult=$?
 
@@ -34,19 +25,22 @@ use_root=$(yad --form --text $"\nAtenção, executar esse tipo de arquivo pode d
         
         if [ "$yadresult" = "2" ]; then
             chmod +x "$*"
-            if [ "$use_root" = "TRUE|" ]; then
+            if [ "$(echo $use_root | cut -f1 -d"|")" = "TRUE" ]; then
                 pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true "$*"
             else
                 "$*"
             fi
         fi
 
-    
+        if [ "$(echo $use_root | cut -f2 -d"|")" = "TRUE" ]; then
+            NOCLOSE="--noclose"
+        fi
+        
         if [ "$yadresult" = "4" ]; then
             chmod +x "$*"
-            if [ "$use_root" = "TRUE|" ]; then
-                pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true konsole -e "$*"
+            if [ "$(echo $use_root | cut -f1 -d"|")" = "TRUE" ]; then
+                pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true konsole $NOCLOSE -e "$*"
             else
-                konsole -e "$*"
+                konsole $NOCLOSE -e "$*"
             fi
         fi
