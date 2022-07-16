@@ -5,5 +5,3 @@ if [ "$(file -i "$1" | grep 'application/x-executable;')" != "" ]; then
 else
     /usr/bin/kde-open5 "$*"
 fi
-
-echo "$*" > /home/biglinux/teste.txt
