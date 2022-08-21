@@ -4,14 +4,19 @@ export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=big-executable
 
 set +H
-use_root=$(yad --form --text $"\nAtenção, executar esse tipo de arquivo pode danificar o sistema.\n\nProssiga somente se confiar que não se trata de um arquivo malicioso.\n \n \n" \
---field $"Utilizar permissões administrativas (root)":CHK \
+use_root=$(yad --image=/usr/share/pixmaps/run.svg --image-on-top --form --text $"<big><b>Prossiga somente se confiar que não se trata de um 
+arquivo malicioso.</b></big>
+<span color='#CC2222'>Atenção, executar esse tipo de arquivo pode danificar o sistema.</span>
+" \
+--align=center --field $"Utilizar permissões administrativas (root)":CHK \
 --field $"Manter o terminal aberto":CHK \
---button=$"Fechar!gtk-close":0 \
---button=$"Executar!/usr/share/icons/hicolor/16x16/apps/running.png":2 \
---button=$"Executar no terminal!/usr/share/icons/gnome/16x16/apps/utilities-terminal.png":4 \
+--field="<b>Deseja prosseguir com a execução?</b>
+:LBL" \
+--button=$" Fechar!gtk-cancel":0 \
+--button=$" Executar!gtk-apply":2 \
+--button=$" Executar no terminal!gtk-execute":4 \
 --center --on-top --borders=20 --title=$"Executar arquivo" \
---window-icon="emblem-warning" \
+--window-icon="gtk-execute" \
 --margins=30)
 
         yadresult=$?
