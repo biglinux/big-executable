@@ -1,3 +1,4 @@
+#!/usr/bin/env xdg-open
 [Desktop Entry]
 Name=Run this file
 Name[pt]=Executar esse arquivo
