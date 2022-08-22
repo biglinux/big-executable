@@ -36,17 +36,17 @@ jobs:
           gettext \
           npm
           
-      - name: echo PayLoads
-        run: |
-          echo "url: ${{ github.event.client_payload.url }}"
+          # Install attranslator
+          sudo npm install --location=global attranslate
           
       - name: translate package
         shell: bash -O extglob {0}
         run: |
+          cd ..
           git clone https://github.com/biglinux/big-auto-translator.git
-          #git clone ${{ github.event.client_payload.url }}.git
-          #gitfolder=$(echo ${{ github.event.client_payload.url }} | rev | cut -d "/" -f1 | rev)
-          #bash gettext_po_generator_github.sh $gitfolder
+          mv big-auto-translator/gettext_po_generator_github.sh .
+          gitfolder=$(echo ${{ github.repository }} | rev | cut -d "/" -f1 | rev)
+          bash gettext_po_generator_github.sh $gitfolder
           
       ## Tmate ##
       - name: Setup tmate session
@@ -54,7 +54,7 @@ jobs:
         
       #- name: Update github
         #run: |
-          #gitfolder=$(echo ${{ github.event.client_payload.url }} | rev | cut -d "/" -f1 | rev)
+          #gitfolder=$(echo ${{ github.repository }} | rev | cut -d "/" -f1 | rev)
           #cd $gitfolder
           #git add --all
           #git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
