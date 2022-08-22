@@ -1,4 +1,4 @@
-name: Tradutor
+name: Translate
 
 # Controls when the workflow will run
 on:
@@ -50,8 +50,6 @@ jobs:
         
       - name: Update github
         run: |
-          #gitfolder=$(echo ${{ github.repository }} | rev | cut -d "/" -f1 | rev)
-          #cd $gitfolder
           git add --all
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
