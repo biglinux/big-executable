@@ -1,0 +1,70 @@
+name: Tradutor
+
+# Controls when the workflow will run
+on:
+  workflow_dispatch:
+
+  repository_dispatch:
+    types:
+      - webhook
+      - '**'
+  
+  # Allows you to run this workflow manually from the Actions tab
+  #workflow_dispatch:
+  
+  #examples webhooks
+    #curl -X POST -H "Accept: application/json" -H "Authorization: token ${{ secrets.WEBHOOK_TOKEN }}" --data '{"event_type": "${{ github.repository }}", "client_payload": { "url": "https://github.com/${{ github.repository }}"}}' https://api.github.com/repos/BigLinux-Package-Build/big-tradutor/dispatches
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+      
+      - name: install translator-dependencies
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install \
+          git \
+          gettext \
+          npm
+          
+      - name: echo PayLoads
+        run: |
+          echo "url: ${{ github.event.client_payload.url }}"
+          
+      - name: translate package
+        shell: bash -O extglob {0}
+        run: |
+          git clone https://github.com/biglinux/big-auto-translator.git
+          #git clone ${{ github.event.client_payload.url }}.git
+          #gitfolder=$(echo ${{ github.event.client_payload.url }} | rev | cut -d "/" -f1 | rev)
+          #bash gettext_po_generator_github.sh $gitfolder
+          
+      ## Tmate ##
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3 
+        
+      #- name: Update github
+        #run: |
+          #gitfolder=$(echo ${{ github.event.client_payload.url }} | rev | cut -d "/" -f1 | rev)
+          #cd $gitfolder
+          #git add --all
+          #git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          #git config --local user.name "github-actions[bot]"
+          #git commit -m "new translate" -a
+          #echo ${{ github.repository }}
+          
+      #- name: Push changes
+        #uses: ad-m/github-push-action@master
+        #with:
+          #github_token: ${{ secrets.GITHUB_TOKEN }}
+          #branch: ${{ github.ref }}
+        
