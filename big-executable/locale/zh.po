@@ -25,6 +25,9 @@ msgstr "执行"
 msgid "Executar no terminal"
 msgstr "在终端上运行"
 
+msgid "Executar arquivo"
+msgstr "运行文件"
+
 msgid ""
 "Prossiga somente se confiar que não se trata de um \n"
 "arquivo malicioso."
@@ -43,15 +46,3 @@ msgstr "保持终端打开"
 
 msgid "Deseja prosseguir com a execução?"
 msgstr "是否要继续执行？"
-
-msgid " $Close!gtk-cancel"
-msgstr " $Close！gtk-取消"
-
-msgid " $Execute!gtk-apply"
-msgstr " $Execute！gtk-应用"
-
-msgid " $ExecuteInTerminal!gtk-execute"
-msgstr " $ExecuteInTerminal！gtk-run"
-
-msgid "Executar arquivo"
-msgstr "运行文件"

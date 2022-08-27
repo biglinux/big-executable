@@ -25,6 +25,9 @@ msgstr "実行する"
 msgid "Executar no terminal"
 msgstr "ターミナルで実行"
 
+msgid "Executar arquivo"
+msgstr "ファイルの実行"
+
 msgid ""
 "Prossiga somente se confiar que não se trata de um \n"
 "arquivo malicioso."
@@ -43,15 +46,3 @@ msgstr "ターミナルを開いたままにする"
 
 msgid "Deseja prosseguir com a execução?"
 msgstr "実行を続行しますか?"
-
-msgid " $Close!gtk-cancel"
-msgstr " $Close!gtk-キャンセル"
-
-msgid " $Execute!gtk-apply"
-msgstr " $Execute!gtk-apply"
-
-msgid " $ExecuteInTerminal!gtk-execute"
-msgstr " $ExecuteInTerminal!gtk-run"
-
-msgid "Executar arquivo"
-msgstr "ファイルの実行"

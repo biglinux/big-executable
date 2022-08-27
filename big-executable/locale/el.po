@@ -25,6 +25,9 @@ msgstr "Εκτελώ"
 msgid "Executar no terminal"
 msgstr "Εκτέλεση σε τερματικό"
 
+msgid "Executar arquivo"
+msgstr "Εκτέλεση αρχείου"
+
 msgid ""
 "Prossiga somente se confiar que não se trata de um \n"
 "arquivo malicioso."
@@ -43,15 +46,3 @@ msgstr "Κρατήστε το τερματικό ανοιχτό"
 
 msgid "Deseja prosseguir com a execução?"
 msgstr "Θέλετε να προχωρήσετε στην εκτέλεση;"
-
-msgid " $Close!gtk-cancel"
-msgstr " $Close!gtk-ακύρωση"
-
-msgid " $Execute!gtk-apply"
-msgstr " $Execute!gtk-apply"
-
-msgid " $ExecuteInTerminal!gtk-execute"
-msgstr " $ExecuteInTerminal!gtk-run"
-
-msgid "Executar arquivo"
-msgstr "Εκτέλεση αρχείου"

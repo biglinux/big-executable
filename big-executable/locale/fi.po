@@ -25,6 +25,9 @@ msgstr "Suorittaa"
 msgid "Executar no terminal"
 msgstr "Suorita terminaalissa"
 
+msgid "Executar arquivo"
+msgstr "Suorita tiedosto"
+
 msgid ""
 "Prossiga somente se confiar que não se trata de um \n"
 "arquivo malicioso."
@@ -43,15 +46,3 @@ msgstr "Pidä päätelaite auki"
 
 msgid "Deseja prosseguir com a execução?"
 msgstr "Haluatko jatkaa suoritusta?"
-
-msgid " $Close!gtk-cancel"
-msgstr " $Close!gtk-peruuta"
-
-msgid " $Execute!gtk-apply"
-msgstr " $Execute!gtk-hakea"
-
-msgid " $ExecuteInTerminal!gtk-execute"
-msgstr " $ExecuteInTerminal!gtk-run"
-
-msgid "Executar arquivo"
-msgstr "Suorita tiedosto"

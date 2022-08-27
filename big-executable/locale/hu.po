@@ -25,6 +25,9 @@ msgstr "Előad"
 msgid "Executar no terminal"
 msgstr "Futtatás terminálon"
 
+msgid "Executar arquivo"
+msgstr "Fájl futtatása"
+
 msgid ""
 "Prossiga somente se confiar que não se trata de um \n"
 "arquivo malicioso."
@@ -43,15 +46,3 @@ msgstr "Tartsa nyitva a terminált"
 
 msgid "Deseja prosseguir com a execução?"
 msgstr "Szeretné folytatni a végrehajtást?"
-
-msgid " $Close!gtk-cancel"
-msgstr " $Close!gtk-cancel"
-
-msgid " $Execute!gtk-apply"
-msgstr " $Execute!gtk-apply"
-
-msgid " $ExecuteInTerminal!gtk-execute"
-msgstr " $ExecuteInTerminal!gtk-run"
-
-msgid "Executar arquivo"
-msgstr "Fájl futtatása"

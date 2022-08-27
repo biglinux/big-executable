@@ -25,6 +25,9 @@ msgstr "Efectua"
 msgid "Executar no terminal"
 msgstr "Rulează pe terminal"
 
+msgid "Executar arquivo"
+msgstr "Rulare fișier"
+
 msgid ""
 "Prossiga somente se confiar que não se trata de um \n"
 "arquivo malicioso."
@@ -43,15 +46,3 @@ msgstr "Păstrați terminalul deschis"
 
 msgid "Deseja prosseguir com a execução?"
 msgstr "Vreți să continuați execuția?"
-
-msgid " $Close!gtk-cancel"
-msgstr " $Close!gtk-anula"
-
-msgid " $Execute!gtk-apply"
-msgstr " $Execute!gtk-se aplică"
-
-msgid " $ExecuteInTerminal!gtk-execute"
-msgstr " $ExecuteInTerminal!gtk-run"
-
-msgid "Executar arquivo"
-msgstr "Rulare fișier"

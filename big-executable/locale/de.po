@@ -25,6 +25,9 @@ msgstr "Ausführen"
 msgid "Executar no terminal"
 msgstr "Auf Terminal ausführen"
 
+msgid "Executar arquivo"
+msgstr "Datei ausführen"
+
 msgid ""
 "Prossiga somente se confiar que não se trata de um \n"
 "arquivo malicioso."
@@ -43,15 +46,3 @@ msgstr "Halten Sie das Terminal offen"
 
 msgid "Deseja prosseguir com a execução?"
 msgstr "Möchten Sie mit der Ausführung fortfahren?"
-
-msgid " $Close!gtk-cancel"
-msgstr " $Close!gtk-cancel"
-
-msgid " $Execute!gtk-apply"
-msgstr " $Execute!gtk-apply"
-
-msgid " $ExecuteInTerminal!gtk-execute"
-msgstr " $ExecuteInTerminal!gtk-run"
-
-msgid "Executar arquivo"
-msgstr "Datei ausführen"

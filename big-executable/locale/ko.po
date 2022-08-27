@@ -25,6 +25,9 @@ msgstr "연주하다"
 msgid "Executar no terminal"
 msgstr "터미널에서 실행"
 
+msgid "Executar arquivo"
+msgstr "파일 실행"
+
 msgid ""
 "Prossiga somente se confiar que não se trata de um \n"
 "arquivo malicioso."
@@ -43,15 +46,3 @@ msgstr "터미널을 열린 상태로 유지"
 
 msgid "Deseja prosseguir com a execução?"
 msgstr "실행을 진행하시겠습니까?"
-
-msgid " $Close!gtk-cancel"
-msgstr " $Close!gtk-취소"
-
-msgid " $Execute!gtk-apply"
-msgstr " $Execute!gtk-신청"
-
-msgid " $ExecuteInTerminal!gtk-execute"
-msgstr " $ExecuteInTerminal!gtk 실행"
-
-msgid "Executar arquivo"
-msgstr "파일 실행"

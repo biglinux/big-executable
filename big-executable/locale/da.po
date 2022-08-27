@@ -25,6 +25,9 @@ msgstr "Gøre"
 msgid "Executar no terminal"
 msgstr "Kør på terminal"
 
+msgid "Executar arquivo"
+msgstr "Kør fil"
+
 msgid ""
 "Prossiga somente se confiar que não se trata de um \n"
 "arquivo malicioso."
@@ -43,15 +46,3 @@ msgstr "Hold terminalen åben"
 
 msgid "Deseja prosseguir com a execução?"
 msgstr "Vil du fortsætte med udførelsen?"
-
-msgid " $Close!gtk-cancel"
-msgstr " $Close!gtk-annuller"
-
-msgid " $Execute!gtk-apply"
-msgstr " $Execute!gtk-apply"
-
-msgid " $ExecuteInTerminal!gtk-execute"
-msgstr " $ExecuteInTerminal!gtk-løb"
-
-msgid "Executar arquivo"
-msgstr "Kør fil"

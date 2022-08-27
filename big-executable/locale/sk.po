@@ -25,6 +25,9 @@ msgstr "Vykonať"
 msgid "Executar no terminal"
 msgstr "Beh na termináli"
 
+msgid "Executar arquivo"
+msgstr "Spustiť súbor"
+
 msgid ""
 "Prossiga somente se confiar que não se trata de um \n"
 "arquivo malicioso."
@@ -43,15 +46,3 @@ msgstr "Nechajte terminál otvorený"
 
 msgid "Deseja prosseguir com a execução?"
 msgstr "Chcete pokračovať v poprave?"
-
-msgid " $Close!gtk-cancel"
-msgstr " $Close!gtk-cancel"
-
-msgid " $Execute!gtk-apply"
-msgstr " $Execute!gtk-apply"
-
-msgid " $ExecuteInTerminal!gtk-execute"
-msgstr " $ExecuteInTerminal!gtk-run"
-
-msgid "Executar arquivo"
-msgstr "Spustiť súbor"

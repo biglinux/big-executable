@@ -25,6 +25,9 @@ msgstr "Выполнять"
 msgid "Executar no terminal"
 msgstr "Запуск на терминале"
 
+msgid "Executar arquivo"
+msgstr "Запустить файл"
+
 msgid ""
 "Prossiga somente se confiar que não se trata de um \n"
 "arquivo malicioso."
@@ -43,15 +46,3 @@ msgstr "Держите терминал открытым"
 
 msgid "Deseja prosseguir com a execução?"
 msgstr "Вы хотите приступить к исполнению?"
-
-msgid " $Close!gtk-cancel"
-msgstr " $Close!gtk-отмена"
-
-msgid " $Execute!gtk-apply"
-msgstr " $Execute!gtk-применить"
-
-msgid " $ExecuteInTerminal!gtk-execute"
-msgstr " $ExecuteInTerminal!gtk-run"
-
-msgid "Executar arquivo"
-msgstr "Запустить файл"

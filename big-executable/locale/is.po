@@ -25,6 +25,9 @@ msgstr "Vinna"
 msgid "Executar no terminal"
 msgstr "Keyrt á flugstöðinni"
 
+msgid "Executar arquivo"
+msgstr "Keyra skrá"
+
 msgid ""
 "Prossiga somente se confiar que não se trata de um \n"
 "arquivo malicioso."
@@ -43,15 +46,3 @@ msgstr "Hafðu flugstöðina opna"
 
 msgid "Deseja prosseguir com a execução?"
 msgstr "Viltu halda áfram með framkvæmdina?"
-
-msgid " $Close!gtk-cancel"
-msgstr " $Close!gtk-hætta við"
-
-msgid " $Execute!gtk-apply"
-msgstr " $Execute!gtk-sækja um"
-
-msgid " $ExecuteInTerminal!gtk-execute"
-msgstr " $ExecuteInTerminal!gtk-run"
-
-msgid "Executar arquivo"
-msgstr "Keyra skrá"
