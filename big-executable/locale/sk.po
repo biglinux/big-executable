@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the big-executable package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: big-executable\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: attranslate\n"
+
+msgid "Fechar"
+msgstr "Zavrieť"
+
+msgid "Executar"
+msgstr "Vykonať"
+
+msgid "Executar no terminal"
+msgstr "Beh na termináli"
+
+msgid ""
+"Prossiga somente se confiar que não se trata de um \n"
+"arquivo malicioso."
+msgstr ""
+"Pokračujte iba vtedy, ak veríte, že to nie je \n"
+"škodlivý súbor."
+
+msgid "Atenção, executar esse tipo de arquivo pode danificar o sistema."
+msgstr "Pozor, spustenie tohto typu súboru môže poškodiť systém."
+
+msgid "Utilizar permissões administrativas"
+msgstr "Používanie povolení správcu"
+
+msgid "Manter o terminal aberto"
+msgstr "Nechajte terminál otvorený"
+
+msgid "Deseja prosseguir com a execução?"
+msgstr "Chcete pokračovať v poprave?"
+
+msgid " $Close!gtk-cancel"
+msgstr " $Close!gtk-cancel"
+
+msgid " $Execute!gtk-apply"
+msgstr " $Execute!gtk-apply"
+
+msgid " $ExecuteInTerminal!gtk-execute"
+msgstr " $ExecuteInTerminal!gtk-run"
+
+msgid "Executar arquivo"
+msgstr "Spustiť súbor"

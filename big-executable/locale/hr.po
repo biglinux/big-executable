@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the big-executable package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: big-executable\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: attranslate\n"
+
+msgid "Fechar"
+msgstr "Blizak"
+
+msgid "Executar"
+msgstr "Izvesti"
+
+msgid "Executar no terminal"
+msgstr "Pokreni na terminalu"
+
+msgid ""
+"Prossiga somente se confiar que não se trata de um \n"
+"arquivo malicioso."
+msgstr ""
+"Nastavite samo ako vjerujete da to nije \n"
+"zlonamjerna datoteka."
+
+msgid "Atenção, executar esse tipo de arquivo pode danificar o sistema."
+msgstr "Pažnja, pokretanje ove vrste datoteke može oštetiti sustav."
+
+msgid "Utilizar permissões administrativas"
+msgstr "Korištenje administrativnih dozvola"
+
+msgid "Manter o terminal aberto"
+msgstr "Držite terminal otvorenim"
+
+msgid "Deseja prosseguir com a execução?"
+msgstr "Želite li nastaviti s pogubljenjem?"
+
+msgid " $Close!gtk-cancel"
+msgstr " $Close!gtk-odustani"
+
+msgid " $Execute!gtk-apply"
+msgstr " $Execute!gtk-apply"
+
+msgid " $ExecuteInTerminal!gtk-execute"
+msgstr " $ExecuteInTerminal!gtk-run"
+
+msgid "Executar arquivo"
+msgstr "Pokreni datoteku"

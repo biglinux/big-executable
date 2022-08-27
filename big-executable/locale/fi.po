@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the big-executable package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: big-executable\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: attranslate\n"
+
+msgid "Fechar"
+msgstr "Sulkea"
+
+msgid "Executar"
+msgstr "Suorittaa"
+
+msgid "Executar no terminal"
+msgstr "Suorita terminaalissa"
+
+msgid ""
+"Prossiga somente se confiar que não se trata de um \n"
+"arquivo malicioso."
+msgstr ""
+"Jatka vain, jos luotat siihen, että se ei ole \n"
+"haitallinen tiedosto."
+
+msgid "Atenção, executar esse tipo de arquivo pode danificar o sistema."
+msgstr "Huomio, tämäntyyppisen tiedoston suorittaminen voi vahingoittaa järjestelmää."
+
+msgid "Utilizar permissões administrativas"
+msgstr "Järjestelmänvalvojan käyttöoikeuksien käyttäminen"
+
+msgid "Manter o terminal aberto"
+msgstr "Pidä päätelaite auki"
+
+msgid "Deseja prosseguir com a execução?"
+msgstr "Haluatko jatkaa suoritusta?"
+
+msgid " $Close!gtk-cancel"
+msgstr " $Close!gtk-peruuta"
+
+msgid " $Execute!gtk-apply"
+msgstr " $Execute!gtk-hakea"
+
+msgid " $ExecuteInTerminal!gtk-execute"
+msgstr " $ExecuteInTerminal!gtk-run"
+
+msgid "Executar arquivo"
+msgstr "Suorita tiedosto"

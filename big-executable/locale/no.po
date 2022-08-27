@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the big-executable package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: big-executable\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: attranslate\n"
+
+msgid "Fechar"
+msgstr "Lukke"
+
+msgid "Executar"
+msgstr "Fremføre"
+
+msgid "Executar no terminal"
+msgstr "Kjør på terminal"
+
+msgid ""
+"Prossiga somente se confiar que não se trata de um \n"
+"arquivo malicioso."
+msgstr ""
+"Fortsett bare hvis du stoler på at det ikke er en \n"
+"ondsinnet fil."
+
+msgid "Atenção, executar esse tipo de arquivo pode danificar o sistema."
+msgstr "Hvis du kjører denne filtypen, kan det skade systemet."
+
+msgid "Utilizar permissões administrativas"
+msgstr "Bruke administrative tillatelser"
+
+msgid "Manter o terminal aberto"
+msgstr "Hold terminalen åpen"
+
+msgid "Deseja prosseguir com a execução?"
+msgstr "Vil du fortsette med henrettelsen?"
+
+msgid " $Close!gtk-cancel"
+msgstr " $Close!gtk-avbryt"
+
+msgid " $Execute!gtk-apply"
+msgstr " $Execute!gtk-apply"
+
+msgid " $ExecuteInTerminal!gtk-execute"
+msgstr " $ExecuteInTerminal!gtk-run"
+
+msgid "Executar arquivo"
+msgstr "Kjør fil"

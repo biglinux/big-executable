@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the big-executable package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: big-executable\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: attranslate\n"
+
+msgid "Fechar"
+msgstr "关闭"
+
+msgid "Executar"
+msgstr "执行"
+
+msgid "Executar no terminal"
+msgstr "在终端上运行"
+
+msgid ""
+"Prossiga somente se confiar que não se trata de um \n"
+"arquivo malicioso."
+msgstr ""
+"仅当您相信它不是\n"
+"恶意文件。"
+
+msgid "Atenção, executar esse tipo de arquivo pode danificar o sistema."
+msgstr "请注意，运行此类型的文件可能会损坏系统。"
+
+msgid "Utilizar permissões administrativas"
+msgstr "使用管理权限"
+
+msgid "Manter o terminal aberto"
+msgstr "保持终端打开"
+
+msgid "Deseja prosseguir com a execução?"
+msgstr "是否要继续执行？"
+
+msgid " $Close!gtk-cancel"
+msgstr " $Close！gtk-取消"
+
+msgid " $Execute!gtk-apply"
+msgstr " $Execute！gtk-应用"
+
+msgid " $ExecuteInTerminal!gtk-execute"
+msgstr " $ExecuteInTerminal！gtk-run"
+
+msgid "Executar arquivo"
+msgstr "运行文件"

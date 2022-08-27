@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the big-executable package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: big-executable\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: attranslate\n"
+
+msgid "Fechar"
+msgstr "닫다"
+
+msgid "Executar"
+msgstr "연주하다"
+
+msgid "Executar no terminal"
+msgstr "터미널에서 실행"
+
+msgid ""
+"Prossiga somente se confiar que não se trata de um \n"
+"arquivo malicioso."
+msgstr ""
+"그것이 아니라고 믿는 경우에만 진행하십시오. \n"
+"악성 파일."
+
+msgid "Atenção, executar esse tipo de arquivo pode danificar o sistema."
+msgstr "주의, 이러한 유형의 파일을 실행하면 시스템이 손상될 수 있습니다."
+
+msgid "Utilizar permissões administrativas"
+msgstr "관리 권한 사용"
+
+msgid "Manter o terminal aberto"
+msgstr "터미널을 열린 상태로 유지"
+
+msgid "Deseja prosseguir com a execução?"
+msgstr "실행을 진행하시겠습니까?"
+
+msgid " $Close!gtk-cancel"
+msgstr " $Close!gtk-취소"
+
+msgid " $Execute!gtk-apply"
+msgstr " $Execute!gtk-신청"
+
+msgid " $ExecuteInTerminal!gtk-execute"
+msgstr " $ExecuteInTerminal!gtk 실행"
+
+msgid "Executar arquivo"
+msgstr "파일 실행"
