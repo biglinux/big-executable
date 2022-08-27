@@ -3,18 +3,29 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=big-executable
 
+Close=$"Fechar"
+Execute=$"Executar"
+ExecuteInTerminal=$"Executar no terminal"
+Desc_Part1=$"Prossiga somente se confiar que não se trata de um 
+arquivo malicioso."
+Desc_Part2=$"Atenção, executar esse tipo de arquivo pode danificar o sistema."
+Field=$"Utilizar permissões administrativas"
+Field2=$"Manter o terminal aberto"
+Field3=$"Deseja prosseguir com a execução?"
+
+
+
 set +H
-use_root=$(yad --image=/usr/share/pixmaps/run.svg --image-on-top --form --text $"<big><b>Prossiga somente se confiar que não se trata de um 
-arquivo malicioso.</b></big>
-<span color='#CC2222'>Atenção, executar esse tipo de arquivo pode danificar o sistema.</span>
+use_root=$(yad --image=/usr/share/pixmaps/run.svg --image-on-top --form --text "<big><b>$Desc_Part1</b></big>
+<span color='#CC2222'>$Desc_Part2</span>
 " \
---align=center --field $"Utilizar permissões administrativas (root)":CHK \
---field $"Manter o terminal aberto":CHK \
---field="<b>Deseja prosseguir com a execução?</b>
+--align=center --field "$Field (root)":CHK \
+--field "$Field2":CHK \
+--field="<b>$Field3</b>
 :LBL" \
---button=$" Fechar!gtk-cancel":0 \
---button=$" Executar!gtk-apply":2 \
---button=$" Executar no terminal!gtk-execute":4 \
+--button=$" $Close!gtk-cancel":0 \
+--button=$" $Execute!gtk-apply":2 \
+--button=$" $ExecuteInTerminal!gtk-execute":4 \
 --center --on-top --borders=20 --title=$"Executar arquivo" \
 --window-icon="gtk-execute" \
 --margins=30)
