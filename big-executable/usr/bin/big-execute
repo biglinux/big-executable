@@ -6,6 +6,7 @@ export TEXTDOMAIN=big-executable
 Close=$"Fechar"
 Execute=$"Executar"
 ExecuteInTerminal=$"Executar no terminal"
+ExecuteFile=$"Executar arquivo"
 Desc_Part1=$"Prossiga somente se confiar que não se trata de um 
 arquivo malicioso."
 Desc_Part2=$"Atenção, executar esse tipo de arquivo pode danificar o sistema."
@@ -23,10 +24,10 @@ use_root=$(yad --image=/usr/share/pixmaps/run.svg --image-on-top --form --text "
 --field "$Field2":CHK \
 --field="<b>$Field3</b>
 :LBL" \
---button=$" $Close!gtk-cancel":0 \
---button=$" $Execute!gtk-apply":2 \
---button=$" $ExecuteInTerminal!gtk-execute":4 \
---center --on-top --borders=20 --title=$"Executar arquivo" \
+--button=" $Close!gtk-cancel":0 \
+--button=" $Execute!gtk-apply":2 \
+--button=" $ExecuteInTerminal!gtk-execute":4 \
+--center --on-top --borders=20 --title="$ExecuteFile" \
 --window-icon="gtk-execute" \
 --margins=30)
 
